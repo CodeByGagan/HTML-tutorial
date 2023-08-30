@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input[type=text] {
+            /* width: 100%; */
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            outline: none;
+        }
+
+        input[type=text]:focus {
+            background-color: lightblue;
+        }
+
+        input[type=search] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('../image/bg5.jpg');
+            /* background-position: 10px 10px; */
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[type=search]:focus {
+            width: 100%;
+        }
+
+        select {
+            width: 50%;
+            background-color: darkblue;
+            color: white;
+        }
+
+        textarea {
+            width: 100%;
+            height: 125px;
+            padding: 10px;
+            border: 2px solid darkblue;
+            box-sizing: border-box;
+            background-color: lightblue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form action="./first.html" method="post">
+
+            <table>
+
+                <!-- <tr>
+                    <td>Search:</td>
+                    <td><input type="text" name="search" placeholder="Search..">
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>Search:</td>
+                    <td><input type="search" name="text" placeholder="Search..">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="Gagan" id="text1" placeholder="Enter your name"   autofocus />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Roll number:</td>
+                    <td><input type="number" name="roll no" id="roll no1" placeholder="Enter your roll no"   />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" name="roll no" id="roll no1" placeholder="" max="40" min="10"   />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <!-- <ul type="none"> -->
+                        <li type="none"><input type="radio" id="gender" value="male" name="gender" />Male</li>
+                        <li type="none"><input type="radio" id="gender" value="female" name="gender" />Female</li>
+                        <li type="none"><input type="radio" id="gender" value="other" name="gender" />Other</li>
+                        <!-- </ul> -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <li type="none"><input type="checkbox" id="Hobbies" value="Cricket" name="any" />Cricket
+                            <input type="checkbox" id="Hobbies" value="Basket Ball" name="any" />Bascket Ball
+                        </li>
+                        <li type="none"><input type="checkbox" id="Hobbies" value="Soccer" name="any" />Soccer
+                            <input type="checkbox" id="Hobbies" value="Tabel Tebbis" name="any" />Tabel Tennis
+                        </li>
+                        <li type="none"><input type="checkbox" id="Hobbies" value="Chess" name="any" />Chess
+                            <input type="checkbox" id="Hobbies" value="Carrom" name="any" />Carrom
+                        </li>
+                    </td>
+
+                <tr>
+                    <td>Registration Number:</td>
+                    <td><input type="Number" name="Registration Number" id="Registration Number1" value="1136464"
+                            readonly /></td>
+                </tr>
+                <tr>
+                    <td>Disabled:</td>
+                    <td><input type="Number" name="Registration Number" id="Registration Number1" value="Disabled"
+                            disabled /></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email1" placeholder="Enter your email"   /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" placeholder="Enter your password" id="password1"
+                            size="20" maxlength="10"   /></td>
+                </tr>
+                <tr>
+                    <td>Upload Your CV <br>and certificicates</td>
+                    <td><input type="file" multiple /></td>
+                </tr>
+                <tr>
+                    <td>Select your<br> favourite browser:</td>
+                    <td><input list="browsers" multiple>
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">Internet Explorer</option>
+                            <option value="Firefox">Firefox</option>
+                            <option value="Google Chrome">Google Chrome</option>
+                            <option value="Opera">Opera</option>
+                            <option value="Safari">Safari</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cars">State:</label></td>
+                    <td>
+
+                        <select>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CT">Chhattisgarh</option>
+                            <option value="GA">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="GA">Goa</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TG">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UT">Uttarakhand</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="AN">Andaman and Nicobar Islands</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DN">Dadra and Nagar Haveli</option>
+                            <option value="DD">Daman and Diu</option>
+                            <option value="DL">Delhi</option>
+                            <option value="LD">Lakshadweep</option>
+                            <option value="PY">Puducherry</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date" /></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="image" src="../image/submit.png" width="100" height="100" /></td>
+                    <td><input type="reset" /></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

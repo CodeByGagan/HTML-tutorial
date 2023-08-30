@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .marquee-container {
+      width: 300px;
+      height: 100px;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+    
+    .marquee-content {
+      animation: marquee-scroll 5s linear infinite;
+    }
+    
+    @keyframes marquee-scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+<body>
+
+
+<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="100" width="200" bgcolor="#f0f0f0">Scrolling text example</marquee>
+
+<marquee behavior="scroll" direction="up" scrollamount="1">Slow Scrolling</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="12">Little Fast Scrolling</marquee>
+
+<marquee behavior="scroll" direction="left" scrollamount="20">Fast Scrolling</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="50">Very Fast Scrolling</marquee>
+<marquee behavior="alternate" direction="right" scrollamount="50">Very Fast Scrolling</marquee>
+<marquee behavior="slide" direction="right" scrollamount="50">Very Fast Scrolling</marquee>
+
+<div class="marquee-container" behavior="scroll" direction="left" scrollamount="2" scrolldelay="100" width="300" height="100" bgcolor="#f0f0f0" hspace="40" vspace="80">
+    <div class="marquee-content">
+      Scrolling text example
+    </div>
+  </div>
+
+
+</body>
+</html>
